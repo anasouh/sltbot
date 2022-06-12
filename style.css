@@ -1,0 +1,155 @@
+details {
+    margin-top:5px;
+    width: 80%;
+    background: #282828;
+    margin-bottom: .5rem;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  summary {
+    padding: 0.5rem;
+    display: block;
+    background: #38393f;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    color: #ffff;
+  }
+  
+  summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+  }
+  
+  /* THE MAGIC 🧙‍♀️ */
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+  
+  
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+  
+  details > ul {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  
+  /////////////////////////////////////////
+  
+  body {
+    background: #222;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+  }
+
+.imgb{
+width:100%;
+}
+
+.discord-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.discord-buttons .discord-button.discord-button-primary {
+    background-color: #5865f2;
+}
+
+.discord-buttons a.discord-button, .discord-buttons button.discord-button {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    min-width: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto,sans-serif;
+    line-height: 16px;
+    margin: 4px 8px 4px 0;
+    padding: 2px 16px;
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color .15s ease,color .15s ease;
+}
+
+.discord-buttons .discord-button:not(.discord-button-disabled).discord-button-primary:hover {
+    background-color: #4752c4;
+}
+
+.discord-buttons .discord-button.discord-button-success {
+    background-color: #3ba55c;
+}
+
+.discord-buttons .discord-button:not(.discord-button-disabled).discord-button-success:hover {
+    background-color: #359553;
+}
+
+.discord-buttons .discord-button.discord-button-link, .discord-buttons .discord-button.discord-button-secondary {
+    background-color: #4f545c;
+}
+
+.discord-buttons .discord-button:not(.discord-button-disabled).discord-button-link:hover, .discord-buttons .discord-button:not(.discord-button-disabled).discord-button-secondary:hover {
+    background-color: #474c53;
+}
+
+.discord-buttons .discord-button.discord-button-danger {
+    background-color: #ed4245;
+}
+
+.discord-buttons .discord-button:not(.discord-button-disabled).discord-button-danger:hover {
+    background-color: #d53b3e;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
